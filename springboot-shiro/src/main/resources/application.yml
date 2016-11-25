@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: api # 指定访问实例1，用以模拟同服务的多实例的高可用性，或测试环境和正式环境的
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8010 #指定该Eureka实例的端口
+  session:
+    timeout: 300   
